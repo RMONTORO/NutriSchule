@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    >
+
+    <LinearLayout
+        android:id="@+id/week_schedule_type"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:weightSum="7"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/type_title"
+            android:textColor="@color/secondaryTextColor"
+            android:background="@color/secondaryColor"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/type1"
+            android:textColor="@color/primaryTextColor"
+            android:background="@color/primaryColor"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/type2"
+            android:textColor="@color/primaryTextColor"
+            android:background="@color/primaryLightColor"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/type3"
+            android:textColor="@color/primaryTextColor"
+            android:background="@color/primaryColor"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/type4"
+            android:textColor="@color/primaryTextColor"
+            android:background="@color/primaryLightColor"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/type5"
+            android:textColor="@color/primaryTextColor"
+            android:background="@color/primaryColor"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/type6"
+            android:textColor="@color/primaryTextColor"
+            android:background="@color/primaryLightColor"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/week_schedule_hour"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:weightSum="7"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/hour_title"
+            android:textColor="@color/secondaryTextColor"
+            android:background="@color/secondaryColor"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/hour1"
+            android:textColor="@color/primaryTextColor"
+            android:background="@color/primaryColor"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/hour2"
+            android:textColor="@color/primaryTextColor"
+            android:background="@color/primaryLightColor"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/hour3"
+            android:textColor="@color/primaryTextColor"
+            android:background="@color/primaryColor"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/hour4"
+            android:textColor="@color/primaryTextColor"
+            android:background="@color/primaryLightColor"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/hour5"
+            android:textColor="@color/primaryTextColor"
+            android:background="@color/primaryColor"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/hour6"
+            android:textColor="@color/primaryTextColor"
+            android:background="@color/primaryLightColor"
+            android:gravity="center"/>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -8,15 +8,23 @@
     <string name="previous">Previous</string>
 
 
-    <!-- dish_type_hours -->
+    <!-- Week Schedule Types -->
+    <string name="type_title">COMIDA</string>
     <string name="type1">Al despertar</string>
+    <string name="type2">Desayuno</string>
+    <string name="type3">Colación</string>
+    <string name="type4">Comida</string>
+    <string name="type5">Colación</string>
+    <string name="type6">Cena</string>
+
+    <!-- Week Schedule Hours -->
+    <string name="hour_title">HORA</string>
     <string name="hour1">00:00</string>
-
-
-
-
-
-
+    <string name="hour2">05:15 AM</string>
+    <string name="hour3">09:30 AM</string>
+    <string name="hour4">12:30 AM</string>
+    <string name="hour5">04:00 PM</string>
+    <string name="hour6">08:30 PM</string>
 
 
 

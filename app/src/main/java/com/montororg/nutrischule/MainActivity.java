@@ -4,16 +4,22 @@ import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
+import com.montororg.nutrischule.fragment.WeekScheduleFragment;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.View;
 
 import android.view.Menu;
 import android.view.MenuItem;
 
+import java.util.zip.Inflater;
+
 public class MainActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
         FloatingActionButton helpBtn = findViewById(R.id.help_btn);
         helpBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,7 +36,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Fragment weekScheduleFragment = new WeekScheduleFragment();
 
+        FragmentTransaction fragmentTransaction;
+        fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.main_frame, weekScheduleFragment);
+        fragmentTransaction.commit();
 
 
 
