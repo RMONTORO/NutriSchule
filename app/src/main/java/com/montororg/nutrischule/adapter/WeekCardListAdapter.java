@@ -9,11 +9,13 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.montororg.nutrischule.R;
 
 import java.util.List;
+import java.util.zip.Inflater;
 
 public class WeekCardListAdapter extends RecyclerView.Adapter<WeekCardListAdapter.ViewHolder> {
 
@@ -24,6 +26,7 @@ public class WeekCardListAdapter extends RecyclerView.Adapter<WeekCardListAdapte
 
     //Constructor
     public WeekCardListAdapter(List<WeekCard> data, Context context){
+        this.mInflater = LayoutInflater.from(context);
         this.mData = data;
         this.mContext = context;
     }
@@ -55,13 +58,22 @@ public class WeekCardListAdapter extends RecyclerView.Adapter<WeekCardListAdapte
         }
 
         void bindData (final WeekCard item){
-            weekCard.setCardBackgroundColor(item.bgColor);
-            weekCardTextView.setTextColor(item.getTxtColor());
             weekCardTextView.setText(item.getTxt());
+
+            if(item.getColor() == WeekCard.COLOR_1){
+                weekCard.setCardBackgroundColor(ContextCompat.getColor(mContext, R.color.primaryColor));
+                weekCardTextView.setTextColor(ContextCompat.getColor(mContext, R.color.primaryTextColor));
+            }else if (item.getColor() == WeekCard.COLOR_2){
+                weekCard.setCardBackgroundColor(ContextCompat.getColor(mContext, R.color.primaryLightColor));
+                weekCardTextView.setTextColor(ContextCompat.getColor(mContext, R.color.primaryTextColor));
+            } else {
+                weekCard.setCardBackgroundColor(ContextCompat.getColor(mContext, R.color.secondaryColor));
+                weekCardTextView.setTextColor(ContextCompat.getColor(mContext, R.color.secondaryTextColor));
+            }
+
         }
 
     }
-
 
 
     @Override

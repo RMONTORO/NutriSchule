@@ -2,13 +2,21 @@ package com.montororg.nutrischule.fragment;
 
 import android.os.Bundle;
 
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.montororg.nutrischule.R;
+import com.montororg.nutrischule.adapter.WeekCard;
+import com.montororg.nutrischule.adapter.WeekCardListAdapter;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -60,7 +68,30 @@ public class WeekScheduleFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_week_schedule, container, false);
+        View view;
+        view = inflater.inflate(R.layout.fragment_week_schedule, container, false);
+
+
+        //Card list (dishes)
+        List<WeekCard> dishesList = new ArrayList<>();
+        dishesList.add(new WeekCard(WeekCard.COLOR_0, getString(R.string.monday_title)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_1, getString(R.string.monday_1)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_2, getString(R.string.monday_2)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_1, getString(R.string.monday_3)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_2, getString(R.string.monday_4)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_1, getString(R.string.monday_5)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_2, getString(R.string.monday_6)));
+
+        WeekCardListAdapter weekCardListAdapter = new WeekCardListAdapter(dishesList, this.getContext());
+        RecyclerView dishesRecyclerview = view.findViewById(R.id.dishes_recyclerview);
+        GridLayoutManager dishesGridLayoutManager = new GridLayoutManager(this.getContext(), 7, GridLayoutManager.HORIZONTAL, false);
+
+        dishesRecyclerview.setHasFixedSize(true);
+        dishesRecyclerview.setLayoutManager(dishesGridLayoutManager);
+        dishesRecyclerview.setAdapter(weekCardListAdapter);
+
+
+
+        return view;
     }
 }

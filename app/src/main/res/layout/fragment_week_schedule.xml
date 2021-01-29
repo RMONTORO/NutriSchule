@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="horizontal"
     android:id="@+id/week_schedule_main"
+
     >
 
     <LinearLayout
@@ -13,9 +14,32 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
+        android:weightSum="10"
         >
 
-        <include layout="@layout/week_schedule_type_hours" />
+        <include layout="@layout/week_schedule_type_hours"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="6"/>
+
+        <View
+            android:background="@color/secondaryDarkColor"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            />
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dishes_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            />
+
+
+
+
 
 
 

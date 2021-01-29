@@ -26,6 +26,15 @@
     <string name="hour5">04:00 PM</string>
     <string name="hour6">08:30 PM</string>
 
+    <!-- MONDAY -->
+    <string name="monday_title">LUNES</string>
+    <string name="monday_1">TÉ</string>
+    <string name="monday_2">Huevos estrellados</string>
+    <string name="monday_3">Pepino y fruta</string>
+    <string name="monday_4">Atún con verduras</string>
+    <string name="monday_5">Pepino y frutos secos</string>
+    <string name="monday_6">Jamón con verduras</string>
+
 
 
 </resources>

@@ -27,14 +27,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        FloatingActionButton helpBtn = findViewById(R.id.help_btn);
-        helpBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "please implement help function", Snackbar.LENGTH_SHORT)
-                        .setAction("Action", null).show();
-            }
-        });
 
         Fragment weekScheduleFragment = new WeekScheduleFragment();
 

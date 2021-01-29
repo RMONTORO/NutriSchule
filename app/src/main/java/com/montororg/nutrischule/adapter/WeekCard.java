@@ -5,29 +5,24 @@ import android.graphics.Color;
 
 public class WeekCard {
 
-    public int txtColor, bgColor;
+    public static final int COLOR_0 = 0;
+    public static final int COLOR_1 = 1;
+    public static final int COLOR_2 = 2;
+
+    public int color;
     public String txt;
 
-    public WeekCard(int txtColor, int bgColor, String txt) {
-        this.txtColor = txtColor;
-        this.bgColor = bgColor;
+    public WeekCard(int color, String txt) {
+        this.color = color;
         this.txt = txt;
     }
 
-    public int getTxtColor() {
-        return txtColor;
+    public int getColor() {
+        return color;
     }
 
-    public void setTxtColor(int txtColor) {
-        this.txtColor = txtColor;
-    }
-
-    public int getBgColor() {
-        return bgColor;
-    }
-
-    public void setBgColor(int bgColor) {
-        this.bgColor = bgColor;
+    public void setColor(int color) {
+        this.color = color;
     }
 
     public String getTxt() {
@@ -37,5 +32,4 @@ public class WeekCard {
     public void setTxt(String txt) {
         this.txt = txt;
     }
-
 }
