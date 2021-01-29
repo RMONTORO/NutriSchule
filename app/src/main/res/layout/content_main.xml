@@ -8,7 +8,81 @@
     android:id="@+id/content_main"
     >
 
-    <include layout="@layout/dish_type_hours" />
+    <LinearLayout
+        android:id="@+id/dish_type_hours"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dish_type_recyclerview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dish_hour_recyclerview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+
+
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/week_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/day_recyclerview_mo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/day_recyclerview_tu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/day_recyclerview_we"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/day_recyclerview_th"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/day_recyclerview_fr"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/day_recyclerview_sa"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/day_recyclerview_msu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+
+
+
+
+
+    </HorizontalScrollView>
 
 
 

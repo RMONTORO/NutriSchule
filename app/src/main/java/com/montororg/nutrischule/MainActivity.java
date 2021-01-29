@@ -22,14 +22,17 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+        FloatingActionButton helpBtn = findViewById(R.id.help_btn);
+        helpBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "please implement help function", Snackbar.LENGTH_SHORT)
                         .setAction("Action", null).show();
             }
         });
+
+
+
 
 
 
