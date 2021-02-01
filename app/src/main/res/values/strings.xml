@@ -44,6 +44,50 @@
     <string name="tuesday_5">Pepino y frutos secos</string>
     <string name="tuesday_6">Taco de queso</string>
 
+    <!-- WEDNESDAY -->
+    <string name="wednesday_title">MIÉRCOLES</string>
+    <string name="wednesday_1">Té</string>
+    <string name="wednesday_2">Huevo con jamón</string>
+    <string name="wednesday_3">Pepino y fruta</string>
+    <string name="wednesday_4">Atún tipo mantaraya</string>
+    <string name="wednesday_5">Pepino y frutos secos</string>
+    <string name="wednesday_6">Huevos cocidos</string>
+
+    <!-- THURSDAY -->
+    <string name="thursday_title">JUEVES</string>
+    <string name="thursday_1">Té</string>
+    <string name="thursday_2">Licuado</string>
+    <string name="thursday_3">Té y fruta</string>
+    <string name="thursday_4">Sandwich de pechuga</string>
+    <string name="thursday_5">Pepino y frutos secos</string>
+    <string name="thursday_6">Rollos de jamón con queso</string>
+
+    <!-- FRIDAY -->
+    <string name="friday_title">VIERNES</string>
+    <string name="friday_1">Té</string>
+    <string name="friday_2">Huevos rancheros</string>
+    <string name="friday_3">Té y fruta</string>
+    <string name="friday_4">Tacos de pechuga</string>
+    <string name="friday_5">Pepino y frutos secos</string>
+    <string name="friday_6">Pechuga desmenuzada con verduras</string>
+
+    <!-- SATURDAY -->
+    <string name="saturday_title">SÁBADO</string>
+    <string name="saturday_1">Té</string>
+    <string name="saturday_2">Sandwich de queso caliente</string>
+    <string name="saturday_3">Pepino y fruta</string>
+    <string name="saturday_4">Sandwich de atún</string>
+    <string name="saturday_5">Pepino y frutos secos</string>
+    <string name="saturday_6">Huevo revuelto con verduras</string>
+
+    <!-- SUNDAY -->
+    <string name="sunday_title">DOMINGO</string>
+    <string name="sunday_1">Té</string>
+    <string name="sunday_2">Chilaquiles</string>
+    <string name="sunday_3">Pepino y fruta</string>
+    <string name="sunday_4">Libre menos letra roja</string>
+    <string name="sunday_5">Pepino y frutos secos</string>
+    <string name="sunday_6">Licuado verde</string>
 
 
 

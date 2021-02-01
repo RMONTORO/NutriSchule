@@ -91,6 +91,46 @@ public class WeekScheduleFragment extends Fragment {
         dishesList.add(new WeekCard(WeekCard.COLOR_1, getString(R.string.tuesday_5)));
         dishesList.add(new WeekCard(WeekCard.COLOR_2, getString(R.string.tuesday_6)));
 
+        dishesList.add(new WeekCard(WeekCard.COLOR_0, getString(R.string.wednesday_title)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_1, getString(R.string.wednesday_1)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_2, getString(R.string.wednesday_2)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_1, getString(R.string.wednesday_3)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_2, getString(R.string.wednesday_4)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_1, getString(R.string.wednesday_5)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_2, getString(R.string.wednesday_6)));
+
+        dishesList.add(new WeekCard(WeekCard.COLOR_0, getString(R.string.thursday_title)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_1, getString(R.string.thursday_1)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_2, getString(R.string.thursday_2)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_1, getString(R.string.thursday_3)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_2, getString(R.string.thursday_4)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_1, getString(R.string.thursday_5)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_2, getString(R.string.thursday_6)));
+
+        dishesList.add(new WeekCard(WeekCard.COLOR_0, getString(R.string.friday_title)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_1, getString(R.string.friday_1)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_2, getString(R.string.friday_2)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_1, getString(R.string.friday_3)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_2, getString(R.string.friday_4)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_1, getString(R.string.friday_5)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_2, getString(R.string.friday_6)));
+
+        dishesList.add(new WeekCard(WeekCard.COLOR_0, getString(R.string.saturday_title)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_1, getString(R.string.saturday_1)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_2, getString(R.string.saturday_2)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_1, getString(R.string.saturday_3)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_2, getString(R.string.saturday_4)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_1, getString(R.string.saturday_5)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_2, getString(R.string.saturday_6)));
+
+        dishesList.add(new WeekCard(WeekCard.COLOR_0, getString(R.string.sunday_title)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_1, getString(R.string.sunday_1)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_2, getString(R.string.sunday_2)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_1, getString(R.string.sunday_3)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_2, getString(R.string.sunday_4)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_1, getString(R.string.sunday_5)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_2, getString(R.string.sunday_6)));
+
         WeekCardListAdapter weekCardListAdapter = new WeekCardListAdapter(dishesList, this.getContext());
         RecyclerView dishesRecyclerview = view.findViewById(R.id.dishes_recyclerview);
         GridLayoutManager dishesGridLayoutManager = new GridLayoutManager(this.getContext(), 7, GridLayoutManager.HORIZONTAL, false);
