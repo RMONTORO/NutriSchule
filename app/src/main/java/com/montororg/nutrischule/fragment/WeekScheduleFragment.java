@@ -74,6 +74,7 @@ public class WeekScheduleFragment extends Fragment {
 
         //Card list (dishes)
         List<WeekCard> dishesList = new ArrayList<>();
+
         dishesList.add(new WeekCard(WeekCard.COLOR_0, getString(R.string.monday_title)));
         dishesList.add(new WeekCard(WeekCard.COLOR_1, getString(R.string.monday_1)));
         dishesList.add(new WeekCard(WeekCard.COLOR_2, getString(R.string.monday_2)));
@@ -81,6 +82,14 @@ public class WeekScheduleFragment extends Fragment {
         dishesList.add(new WeekCard(WeekCard.COLOR_2, getString(R.string.monday_4)));
         dishesList.add(new WeekCard(WeekCard.COLOR_1, getString(R.string.monday_5)));
         dishesList.add(new WeekCard(WeekCard.COLOR_2, getString(R.string.monday_6)));
+
+        dishesList.add(new WeekCard(WeekCard.COLOR_0, getString(R.string.tuesday_title)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_1, getString(R.string.tuesday_1)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_2, getString(R.string.tuesday_2)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_1, getString(R.string.tuesday_3)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_2, getString(R.string.tuesday_4)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_1, getString(R.string.tuesday_5)));
+        dishesList.add(new WeekCard(WeekCard.COLOR_2, getString(R.string.tuesday_6)));
 
         WeekCardListAdapter weekCardListAdapter = new WeekCardListAdapter(dishesList, this.getContext());
         RecyclerView dishesRecyclerview = view.findViewById(R.id.dishes_recyclerview);

@@ -28,12 +28,23 @@
 
     <!-- MONDAY -->
     <string name="monday_title">LUNES</string>
-    <string name="monday_1">TÉ</string>
+    <string name="monday_1">Té</string>
     <string name="monday_2">Huevos estrellados</string>
     <string name="monday_3">Pepino y fruta</string>
     <string name="monday_4">Atún con verduras</string>
     <string name="monday_5">Pepino y frutos secos</string>
     <string name="monday_6">Jamón con verduras</string>
+
+    <!-- TUESDAY -->
+    <string name="tuesday_title">MARTES</string>
+    <string name="tuesday_1">Té</string>
+    <string name="tuesday_2">Sandwich de jamón</string>
+    <string name="tuesday_3">Té y fruta</string>
+    <string name="tuesday_4">Ensalada de pechuga</string>
+    <string name="tuesday_5">Pepino y frutos secos</string>
+    <string name="tuesday_6">Taco de queso</string>
+
+
 
 
 
